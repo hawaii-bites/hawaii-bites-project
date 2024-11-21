@@ -19,8 +19,12 @@ const CategoryPage = () => {
   const params = useParams();
   const categoryParam = params?.category;
 
-  // Ensure categoryParam is a string
-  const category = Array.isArray(categoryParam) ? categoryParam[0] : categoryParam;
+  // Convert `categoryParam` to a string safely
+  const category = typeof categoryParam === "string" 
+    ? categoryParam 
+    : Array.isArray(categoryParam) 
+    ? categoryParam[0] 
+    : null;
 
   if (!category) {
     return (
@@ -31,8 +35,10 @@ const CategoryPage = () => {
     );
   }
 
-  // Filter items based on the category from the URL
-  const filteredItems = menuItems.filter((item) => item.category === category.toLowerCase());
+  // Use `toLowerCase` safely
+  const filteredItems = menuItems.filter(
+    (item) => item.category === category.toLowerCase()
+  );
 
   if (filteredItems.length === 0) {
     return (
