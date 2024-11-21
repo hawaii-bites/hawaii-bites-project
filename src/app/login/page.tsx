@@ -26,12 +26,24 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-green-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-green-100">
+      {/* Description Box */}
+      <div className="bg-blue-100 p-6 rounded-lg shadow-md w-full max-w-lg mb-6">
+        <h2 className="text-xl font-bold mb-4 text-center text-black">About Hawaii Bites</h2>
+        <p className="text-black text-sm leading-relaxed">
+          Hawaii Bites provides a secure and intuitive login portal for University of Hawaii students. 
+          Access personalized services regarding places to dine on campus. 
+          For Students and Users input your Email in the Username field and Password.
+          For Vendors input the Name of Company in teh Username field and Password.
+        </p>
+      </div>
+
+      {/* Login Form */}
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-6 text-center text-black">Hawaii Bites Login</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-black">Login</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-black">UH Email</label>
+            <label htmlFor="email" className="block text-sm font-medium text-black">Username</label>
             <input
               type="email"
               id="email"
