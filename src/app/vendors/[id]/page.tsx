@@ -2,6 +2,8 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Define the vendor menu type
 interface VendorMenu {
@@ -207,7 +209,9 @@ const VendorPage: React.FC = () => {
     }
   
     return (
-      <div className="container mx-auto py-10">
+      
+      <div className="min-h-screen flex flex-col mx-auto bg-[#f0fdf4]">
+        <Navbar />
         <h1 className="text-4xl font-bold text-gray-800 mb-6">{vendorData.name}</h1>
   
         {vendorData.food.length > 0 && (
@@ -248,6 +252,7 @@ const VendorPage: React.FC = () => {
             </ul>
           </section>
         )}
+        <Footer />
       </div>
     );
   };
