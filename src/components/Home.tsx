@@ -3,7 +3,20 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-const vendors = [
+type Vendor = {
+  id: string;
+  name: string;
+};
+
+type Special = {
+  name: string;
+  location: string;
+  deal?: string;
+};
+
+type SpecialsKeys = "Breakfast" | "Lunch" | "Dinner";
+
+const vendors: Vendor[] = [
   { id: "krazy-dogs", name: "Krazy Dogs" },
   { id: "middle-eats", name: "Middle Eats" },
   { id: "olays-thai-lao-express", name: "Olay's Thai Lao Express" },
@@ -19,6 +32,21 @@ const vendors = [
   { id: "lnl", name: "L&L Hawaiian Barbecue" },
   { id: "panda-express", name: "Panda Express" },
 ];
+
+const specials: Record<SpecialsKeys, Special[]> = {
+  Breakfast: [
+    { name: "Acai Bowl", location: "Jamba Juice" },
+    { name: "Breakfast Burrito", location: "Campus Center Food Court" },
+  ],
+  Lunch: [
+    { name: "Chicken Katsu", location: "L&L Hawaiian Barbecue" },
+    { name: "Falafel", location: "Middle Eats" },
+  ],
+  Dinner: [
+    { name: "Grilled Salmon", location: "Gateway Café" },
+    { name: "Loco Moco", location: "Hale Aloha Café" },
+  ],
+};
 
 const fuzzyMatch = (input: string, target: string): boolean => {
   const normalizedInput = input.trim().toLowerCase();
@@ -38,13 +66,15 @@ const fuzzyMatch = (input: string, target: string): boolean => {
 };
 
 const MainContent: React.FC = () => {
-  const [timeOfDay, setTimeOfDay] = useState<string>("");
-  const [search, setSearch] = useState("");
+  const [timeOfDay, setTimeOfDay] = useState<SpecialsKeys>("Breakfast"); // Default value
+  const [search, setSearch] = useState<string>("");
   const router = useRouter();
 
   useEffect(() => {
     const currentHour = new Date().getHours();
-    setTimeOfDay(currentHour < 10 ? "Breakfast" : currentHour < 15 ? "Lunch" : "Dinner");
+    const newTimeOfDay: SpecialsKeys =
+      currentHour < 10 ? "Breakfast" : currentHour < 15 ? "Lunch" : "Dinner";
+    setTimeOfDay(newTimeOfDay);
   }, []);
 
   const handleSearch = (event: React.FormEvent) => {
@@ -57,33 +87,18 @@ const MainContent: React.FC = () => {
     }
   };
 
-  const categories = ["Healthy", "Vegetarian", "Popular"];
+  const categories: string[] = ["Healthy", "Vegetarian", "Popular"];
 
   const handleCategoryClick = (category: string) => {
     router.push(`/categories/${category.toLowerCase()}`);
   };
 
-  const specials = {
-    Breakfast: [
-      { name: "Acai Bowl", location: "Jamba Juice" },
-      { name: "Breakfast Burrito", location: "Campus Center Food Court" },
-    ],
-    Lunch: [
-      { name: "Chicken Katsu", location: "L&L Hawaiian Barbecue" },
-      { name: "Falafel", location: "Middle Eats" },
-    ],
-    Dinner: [
-      { name: "Grilled Salmon", location: "Gateway Café" },
-      { name: "Loco Moco", location: "Hale Aloha Café" },
-    ],
-  };
-
-  const dailySpecials = [
+  const dailySpecials: Special[] = [
     { name: "Chili Cheese Dog", location: "Krazy Dogs", deal: "10% off today!" },
     { name: "Lao Fried Chicken Plate", location: "Saap Saap HI", deal: "Limited time only!" },
   ];
 
-  const popularChoices = [
+  const popularChoices: Special[] = [
     { name: "Teriyaki Chicken Bowl", location: "Campus Center" },
     { name: "Vegetarian Sushi", location: "Manoa Gardens" },
     { name: "BBQ Pork Sandwich", location: "Food Truck Row" },
@@ -130,7 +145,7 @@ const MainContent: React.FC = () => {
       <section className="text-center mb-16">
         <h2 className="text-3xl font-semibold text-[#065f46] mb-8">{`${timeOfDay} Specials`}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {specials[timeOfDay]?.map((special, index) => (
+          {specials[timeOfDay].map((special, index) => (
             <div
               key={index}
               className="p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-xl"

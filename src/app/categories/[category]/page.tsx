@@ -2,6 +2,8 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Example menu items
 const menuItems = [
@@ -44,17 +46,21 @@ const CategoryPage = () => {
   }
 
   return (
-    <div className="container mx-auto py-10">
-      <h1 className="text-4xl font-bold capitalize text-center mb-8">{category.charAt(0).toUpperCase() + category.slice(1)} Options</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredItems.map((item, index) => (
-          <div key={index} className="bg-white shadow-md p-6 rounded-lg border">
-            <h2 className="text-2xl font-bold mb-2">{item.name}</h2>
-            <p className="text-gray-700">{item.description}</p>
-            <p className="text-sm text-gray-500 mt-2">Vendor: {item.vendor}</p>
-          </div>
-        ))}
+    <div className="min-h-screen flex flex-col bg-[#005C39] text-black">
+      <Navbar />            {/* Render the Navbar component */}
+      <div className="container mx-auto py-10">
+        <h1 className="text-4xl font-bold capitalize text-center mb-8">{category.charAt(0).toUpperCase() + category.slice(1)} Options</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredItems.map((item, index) => (
+            <div key={index} className="bg-white shadow-md p-6 rounded-lg border">
+              <h2 className="text-2xl font-bold mb-2">{item.name}</h2>
+              <p className="text-gray-700">{item.description}</p>
+              <p className="text-sm text-gray-500 mt-2">Vendor: {item.vendor}</p>
+            </div>
+          ))}
+        </div>
       </div>
+      <Footer />            {/* Render the Footer component */}
     </div>
   );
 };
