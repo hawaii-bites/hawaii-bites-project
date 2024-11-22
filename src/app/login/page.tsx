@@ -17,8 +17,11 @@ export default function LoginPage() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of a068d41 (revert update 2)
+=======
+>>>>>>> parent of e0c0b43 (revert update 2)
     const validPassword = 'SpaceCadet88';
 =======
     const validPassword = 'MoonWalker769*';
@@ -29,11 +32,14 @@ export default function LoginPage() {
 =======
     const validPassword = 'MoonWalker769*';
 >>>>>>> parent of 7381629 (Seth valid user and password)
+<<<<<<< HEAD
 =======
     const validPassword = 'MoonWalker769*';
 >>>>>>> parent of 7381629 (Seth valid user and password)
 =======
 >>>>>>> parent of a068d41 (revert update 2)
+=======
+>>>>>>> parent of e0c0b43 (revert update 2)
 
     // Validate email and password
     if ((email === validEmail && password === validPassword) || (email === validEmail2 && password === validPassword2)) {
