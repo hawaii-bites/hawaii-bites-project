@@ -24,9 +24,18 @@ const CategoryPage = () => {
 =======
   const categoryParam = params?.category;
 
+<<<<<<< HEAD
   // Ensure categoryParam is a string
   const category = Array.isArray(categoryParam) ? categoryParam[0] : categoryParam;
 >>>>>>> parent of ac6df44 (Attempt to insure ability to use toLowerCase)
+=======
+  // Convert `categoryParam` to a string safely
+  const category = typeof categoryParam === "string" 
+    ? categoryParam 
+    : Array.isArray(categoryParam) 
+    ? categoryParam[0] 
+    : null;
+>>>>>>> parent of 102c0df (toLowerCase property)
 
   if (!category) {
     return (
@@ -37,8 +46,10 @@ const CategoryPage = () => {
     );
   }
 
-  // Filter items based on the category from the URL
-  const filteredItems = menuItems.filter((item) => item.category === category.toLowerCase());
+  // Use `toLowerCase` safely
+  const filteredItems = menuItems.filter(
+    (item) => item.category === category.toLowerCase()
+  );
 
   if (filteredItems.length === 0) {
     return (
