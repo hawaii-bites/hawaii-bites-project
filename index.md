@@ -105,6 +105,10 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 - [User Guide](#user-guide)
 - [Developer Guide](#developer-guide)
 - [Meet the Team](#meet-the-team)
+<<<<<<< HEAD
+=======
+- [Team Contract](#team-contract)
+>>>>>>> parent of f152bd2 (Update index.md)
 - [Contact Us](#contact-us)
 
  
