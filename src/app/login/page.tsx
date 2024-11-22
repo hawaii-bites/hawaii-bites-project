@@ -40,6 +40,7 @@ export default function LoginPage() {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="flex flex-col items-center justify-center min-h-screen bg-green-100">
       {/* Description Box */}
       <div className="bg-blue-100 p-6 rounded-lg shadow-md w-full max-w-lg mb-6">
@@ -70,6 +71,14 @@ export default function LoginPage() {
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">UH Email</label>
 >>>>>>> parent of 0fc4def (Update login with a bit of style)
+=======
+    <div className="flex items-center justify-center min-h-screen bg-green-100">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+        <h2 className="text-2xl font-bold mb-6 text-center text-black">Hawaii Bites Login</h2>
+        <form onSubmit={handleLogin}>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium text-black">UH Email</label>
+>>>>>>> parent of 952b128 (installing react)
             <input
               type="email"
               id="email"

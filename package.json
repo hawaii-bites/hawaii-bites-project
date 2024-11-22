@@ -16,8 +16,8 @@
 =======
 >>>>>>> parent of ce84864 (Connecting prisma to user Vercel Superbase PostgreSQL)
     "next": "15.0.3",
-    "react": "^19.0.0-rc-66855b96-20241106",
-    "react-dom": "^19.0.0-rc-66855b96-20241106"
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -45,6 +45,7 @@
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
+<<<<<<< HEAD
   },
   "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
   "main": "index.js",
@@ -59,4 +60,7 @@
 >>>>>>> parent of ce84864 (Connecting prisma to user Vercel Superbase PostgreSQL)
   }
 >>>>>>> parent of 592df9b (changed title to Hawaii Bites)
+=======
+  }
+>>>>>>> parent of 952b128 (installing react)
 }
