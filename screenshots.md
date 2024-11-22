@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Progress
 
 ## Navigation
@@ -8,9 +9,16 @@
 - [User Profile Page](#user-profile-page)
 - [Admin Dashboard Page](#admin-dashboard-page)
 - [Vendor Dashboard Page](#vendor-dashboard-page)
+=======
+---
+layout: default
+title: Progress
+---
+>>>>>>> parent of f6b0a39 (Update screenshots.md)
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
+# Screenshots of Progress
 
+<<<<<<< HEAD
   <!-- Landing Page -->
   <div id="landing-page" style="max-width: 600px; text-align: center;">
     <h2>Landing Page</h2>
@@ -74,4 +82,12 @@
     <img src="./public/VendorDashboard.jpeg" alt="Vendor Dashboard" style="width: 100%; height: auto; border-radius: 10px;">
   </div>
 
+=======
+<div style="text-align: center;">
+  <img src="./public/LandingPage.jpeg" alt="Landing Page" style="width: 50%; margin-bottom: 20px;">
+  <p>Landing Page Updates</p>
+
+  <img src="./public/HomePage.jpeg" alt="Home Page" style="width: 50%; margin-bottom: 20px;">
+  <p>Home Page Updates</p>
+>>>>>>> parent of f6b0a39 (Update screenshots.md)
 </div>
