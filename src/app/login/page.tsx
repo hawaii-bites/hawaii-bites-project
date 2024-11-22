@@ -34,7 +34,7 @@ export default function LoginPage() {
           Hawaii Bites provides a secure and intuitive login portal for University of Hawaii students. 
           Access personalized services regarding places to dine on campus. 
           For Students and Users input your Email in the Username field and Password.
-          For Vendors input the Name of Company in teh Username field and Password.
+          For Vendors input the Name of Company in the Username field and Password.
         </p>
       </div>
 
