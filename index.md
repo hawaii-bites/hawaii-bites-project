@@ -1,6 +1,7 @@
 ---
 layout: default
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: Manoa Munchies
 ---
 
@@ -33,6 +34,8 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 <p style="text-align: center; font-size: 1.2em; color: #333; margin-bottom: 20px;">Helping students find their favorite meals on campus.</p>
 =======
 =======
+=======
+>>>>>>> parent of 978552a (fix to Hawaii Bites)
 title: Hawaii Bites
 ---
 
