@@ -55,6 +55,7 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 >>>>>>> parent of 6baa6bf (Update index.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Page Content -->
 <section style="max-width: 800px; margin: 0 auto; font-size: 1em; line-height: 1.6;">
   <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Navigation</h2>
@@ -90,13 +91,19 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 >>>>>>> parent of 9cd6519 (update index)
 =======
 
+=======
+>>>>>>> parent of 16c77f5 (Update index.md)
 ## Overview
 Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Project Mockups
+=======
+# Project Pages Overview
+>>>>>>> parent of 16c77f5 (Update index.md)
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
 
