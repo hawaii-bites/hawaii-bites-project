@@ -13,9 +13,13 @@ export default function LoginPage() {
 
     const validEmail = 'dkb25@hawaii.edu';
 <<<<<<< HEAD
+<<<<<<< HEAD
     const validPassword = 'SpaceCadet88';
     const validEmail2 = 'sethi3@hawaii.edu';
     const validPassword2 = 'Sword23';
+=======
+    const validPassword = 'MoonWalker769*';
+>>>>>>> parent of 7381629 (Seth valid user and password)
 =======
     const validPassword = 'MoonWalker769*';
 >>>>>>> parent of 7381629 (Seth valid user and password)
