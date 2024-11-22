@@ -35,6 +35,7 @@ const availableDislikes = [
 
 const UserProfilePage: React.FC = () => {
   const [user, setUser] = useState<UserProfile>({
+<<<<<<< HEAD
     name: "John Doe",
     email: "john.doe@example.com",
     likes: ["Vegetarian Sushi", "Chicken Katsu"],
@@ -46,6 +47,17 @@ const UserProfilePage: React.FC = () => {
   const [newDislike, setNewDislike] = useState<string>("");
   const [pendingLikes, setPendingLikes] = useState<string[]>([...user.likes]);
   const [pendingDislikes, setPendingDislikes] = useState<string[]>([...user.dislikes]);
+=======
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    likes: ['Chinese', 'Vegetarian'],
+    dislikes: ['Spicy', 'Seafood'],
+    profilePicture: null, // Placeholder for profile picture
+  });
+
+  const [newLike, setNewLike] = useState<string>('');
+  const [newDislike, setNewDislike] = useState<string>('');
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
 
   // Profile picture upload handler
   const handleProfilePictureUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -62,33 +74,43 @@ const UserProfilePage: React.FC = () => {
     }
   };
 
-  // Add a new food to the pending likes list
+  // Handle adding and removing likes and dislikes
   const handleAddLike = () => {
+<<<<<<< HEAD
     if (newLike && !pendingLikes.includes(newLike) && availableFoods.includes(newLike)) {
       setPendingLikes((prevLikes) => [...prevLikes, newLike]);
       setNewLike("");
     } else {
       alert("Please select a valid food item from the available list.");
+=======
+    if (newLike && !user.likes.includes(newLike)) {
+      setUser((prevUser) => ({ ...prevUser, likes: [...prevUser.likes, newLike] }));
+      setNewLike('');
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
     }
   };
 
-  // Add a new food to the pending dislikes list
   const handleAddDislike = () => {
+<<<<<<< HEAD
     if (newDislike && !pendingDislikes.includes(newDislike) && availableDislikes.includes(newDislike)) {
       setPendingDislikes((prevDislikes) => [...prevDislikes, newDislike]);
       setNewDislike("");
     } else {
       alert("Please select a valid dislike from the available list.");
+=======
+    if (newDislike && !user.dislikes.includes(newDislike)) {
+      setUser((prevUser) => ({ ...prevUser, dislikes: [...prevUser.dislikes, newDislike] }));
+      setNewDislike('');
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
     }
   };
 
-  // Remove a food from the pending likes list
   const handleRemoveLike = (like: string) => {
-    setPendingLikes((prevLikes) => prevLikes.filter((item) => item !== like));
+    setUser((prevUser) => ({ ...prevUser, likes: prevUser.likes.filter((item) => item !== like) }));
   };
 
-  // Remove a food from the pending dislikes list
   const handleRemoveDislike = (dislike: string) => {
+<<<<<<< HEAD
     setPendingDislikes((prevDislikes) => prevDislikes.filter((item) => item !== dislike));
   };
 
@@ -100,6 +122,9 @@ const UserProfilePage: React.FC = () => {
       dislikes: pendingDislikes,
     }));
     alert("Your changes have been saved!");
+=======
+    setUser((prevUser) => ({ ...prevUser, dislikes: prevUser.dislikes.filter((item) => item !== dislike) }));
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
   };
 
   return (
@@ -142,16 +167,23 @@ const UserProfilePage: React.FC = () => {
           <div className="card bg-gray-50 p-5 shadow-lg rounded-lg">
             <h2 className="text-2xl font-bold text-green-700 mb-4">Foods You Like</h2>
             <ul className="space-y-2 mb-3">
+<<<<<<< HEAD
               {pendingLikes.map((like, index) => (
                 <li key={index} className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
                   <span className="text-lg text-gray-800 font-medium">{like}</span>
                   <button className="text-red-700 hover:underline" onClick={() => handleRemoveLike(like)}>
+=======
+              {user.likes.map((like, index) => (
+                <li key={index} className="flex justify-between items-center p-2 bg-gray-100 rounded-md">
+                  {like}
+                  <button className="text-red-600" onClick={() => handleRemoveLike(like)}>
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
                     Remove
                   </button>
                 </li>
               ))}
             </ul>
-            <div className="flex mb-3">
+            <div className="flex">
               <input
                 type="text"
                 className="flex-grow p-3 border border-gray-300 rounded-l-lg"
@@ -174,16 +206,23 @@ const UserProfilePage: React.FC = () => {
           <div className="card bg-gray-50 p-5 shadow-lg rounded-lg">
             <h2 className="text-2xl font-bold text-green-700 mb-4">Foods You Don’t Like</h2>
             <ul className="space-y-2 mb-3">
+<<<<<<< HEAD
               {pendingDislikes.map((dislike, index) => (
                 <li key={index} className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
                   <span className="text-lg text-gray-800 font-medium">{dislike}</span>
                   <button className="text-red-700 hover:underline" onClick={() => handleRemoveDislike(dislike)}>
+=======
+              {user.dislikes.map((dislike, index) => (
+                <li key={index} className="flex justify-between items-center p-2 bg-gray-100 rounded-md">
+                  {dislike}
+                  <button className="text-red-600" onClick={() => handleRemoveDislike(dislike)}>
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
                     Remove
                   </button>
                 </li>
               ))}
             </ul>
-            <div className="flex mb-3">
+            <div className="flex">
               <input
                 type="text"
                 className="flex-grow p-3 border border-gray-300 rounded-l-lg"
@@ -203,6 +242,7 @@ const UserProfilePage: React.FC = () => {
             </div>
           </div>
         </section>
+<<<<<<< HEAD
 
         <div className="text-center mt-8">
           <button
@@ -212,6 +252,8 @@ const UserProfilePage: React.FC = () => {
             Submit Changes
           </button>
         </div>
+=======
+>>>>>>> parent of 1144ed1 (Adding Submit Button)
       </div>
 
       <Footer />
