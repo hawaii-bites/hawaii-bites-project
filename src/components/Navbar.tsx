@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
 <<<<<<< HEAD
           <Link href="/todays-top-picks" className="hover:underline">Today&apos;s Top Picks</Link>
           <Link href="/food-available-now" className="hover:underline">Food&apos;s Available Right Now</Link>
+<<<<<<< HEAD
           <Link href="/Admin" className="hover:underline">Admin</Link>
           <Link href="/Vendor" className="hover:underline">Vendor</Link>
 =======
@@ -41,6 +42,8 @@ const Navbar: React.FC = () => {
           <Link href="/todays-top-picks" className="hover:underline">Today's Top Picks</Link>
           <Link href="/foods-available-right-now" className="hover:underline">Food's Available Right Now</Link>
 >>>>>>> parent of 4c66bdb (update foods available to appear in nav and show webpage)
+=======
+>>>>>>> parent of c7724fe (Admin and Vendor Page)
         </nav>
       </div>
     </header>
