@@ -318,4 +318,7 @@ Seth Ines is pursuing a Bachelor of Science in Computer Science within the Depar
 ## Contact Us
 - Email: **hawaiibites@gmail.com**
 - GitHub: [Hawaii Bites Organization](https://github.com/hawaii-bites)
+<<<<<<< HEAD
 >>>>>>> parent of 80994c8 (Delete index.md)
+=======
+>>>>>>> parent of 3452f76 (update index)
