@@ -19,7 +19,14 @@ const menuItems = [
 
 const CategoryPage = () => {
   const params = useParams();
+<<<<<<< HEAD
   const category = params?.category;
+=======
+  const categoryParam = params?.category;
+
+  // Ensure categoryParam is a string
+  const category = Array.isArray(categoryParam) ? categoryParam[0] : categoryParam;
+>>>>>>> parent of ac6df44 (Attempt to insure ability to use toLowerCase)
 
   if (!category) {
     return (
