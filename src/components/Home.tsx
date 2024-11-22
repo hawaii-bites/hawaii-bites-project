@@ -66,6 +66,7 @@ const fuzzyMatch = (input: string, target: string): boolean => {
 };
 
 const MainContent: React.FC = () => {
+<<<<<<< HEAD
   const [timeOfDay, setTimeOfDay] = useState<SpecialsKeys>("Breakfast"); // Default value
   const [search, setSearch] = useState<string>("");
   const router = useRouter();
@@ -194,3 +195,15 @@ const MainContent: React.FC = () => {
 };
 
 export default MainContent;
+=======
+    return (
+      <main className="flex-grow container mx-auto py-10">
+        <h2 className="text-3xl font-bold mb-4">Welcome to Manoa Munchies!</h2>
+        <p>Discover your favorite campus meals and check out what’s available today.</p>
+      </main>
+    );
+  };
+  
+  export default MainContent;
+  
+>>>>>>> parent of f230689 (Update home to get more information)
