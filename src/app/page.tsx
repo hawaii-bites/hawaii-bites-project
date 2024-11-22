@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 "use client";
 
+=======
+>>>>>>> parent of 07dc528 (update page use client)
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
