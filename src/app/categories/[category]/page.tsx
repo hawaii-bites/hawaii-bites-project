@@ -19,10 +19,7 @@ const menuItems = [
 
 const CategoryPage = () => {
   const params = useParams();
-  const categoryParam = params?.category;
-
-  // Ensure categoryParam is a string
-  const category = Array.isArray(categoryParam) ? categoryParam[0] : categoryParam;
+  const category = params?.category;
 
   if (!category) {
     return (
