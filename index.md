@@ -45,10 +45,29 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
     <li><a href="#contact-us" style="text-decoration: none; color: #065f46; font-weight: bold;">Contact Us</a></li>
   </ul>
 
+<<<<<<< HEAD
   <h2 id="overview" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Overview</h2>
   <p>
     Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
   </p>
+=======
+## User Guide
+- Navigate to "Foods Available Now" to see what’s being served.
+- Use filters to search for specific cuisines or dietary preferences.
+
+## Developer Guide
+To run this project locally:
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the app with `npm run dev`.
+
+## Team Members
+# Kanoa Borromeo
+- Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
+
+# Seth Ines
+- Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
+>>>>>>> parent of 4399e46 (Update index.md)
 
   <h2 id="project-goals" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Project Goals</h2>
   <ul style="margin-bottom: 30px;">
