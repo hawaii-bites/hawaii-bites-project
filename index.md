@@ -58,6 +58,7 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 >>>>>>> parent of 80994c8 (Delete index.md)
 ## Navigation
 - [Overview](#overview)
+<<<<<<< HEAD
 - [User Guide](#user-guide)
 - [Developer Guide](#developer-guide)
 - [Contact Us](#contact-us)
@@ -110,6 +111,8 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 =======
 ## Navigation
 - [Overview](#overview)
+=======
+>>>>>>> parent of b1a6952 (Update index.md)
 - [Project Mockups](#project-mockups)
 - [Project Goals](#project-goals)
 - [User Guide](#user-guide)
@@ -132,6 +135,7 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 ## Overview
 Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,6 +157,8 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 =======
 =======
 >>>>>>> parent of b6f1830 (Update index.md)
+=======
+>>>>>>> parent of b1a6952 (Update index.md)
 # Project Mockups
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 20px;">
@@ -162,11 +168,15 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <h2>Landing Page</h2>
     <img src="./public/LandingPage.jpeg" alt="Landing Page" style="width: 100%; height: auto; border-radius: 10px;">
     <p style="margin-top: 10px;">
+<<<<<<< HEAD
 >>>>>>> parent of 1600cc1 (Delete index.md)
+=======
+>>>>>>> parent of b1a6952 (Update index.md)
       The first look at Hawaii Bites, giving users an overview of the app's features and inviting them to explore the best food options on campus.
     </p>
   </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   <!-- Column 2: Home Page -->
   <div style="flex: 1; padding: 10px; max-width: 300px;">
@@ -174,16 +184,22 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <img src="./public/HomePage.jpeg" alt="Home Page" style="max-width: 100%; height: auto; border-radius: 10px;">
     <p>
 =======
+=======
+>>>>>>> parent of b1a6952 (Update index.md)
   <!-- Home Page -->
   <div style="max-width: 600px; text-align: center;">
     <h2>Home Page</h2>
     <img src="./public/HomePage.jpeg" alt="Home Page" style="width: 100%; height: auto; border-radius: 10px;">
     <p style="margin-top: 10px;">
+<<<<<<< HEAD
 >>>>>>> parent of 1600cc1 (Delete index.md)
+=======
+>>>>>>> parent of b1a6952 (Update index.md)
       The main hub for users, showcasing popular food options, daily specials, and easy access to different sections of the app.
     </p>
   </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <!-- Column 3: Today's Top Picks Page -->
@@ -294,6 +310,10 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 </div>
 
 
+=======
+</div>
+
+>>>>>>> parent of b1a6952 (Update index.md)
 ## Project Goals
 1. Consolidate Campus Food Options: Provide a single platform that lists menu items from all University of Hawaii campus food locations, including Campus Center, food trucks, Manoa Gardens, and Paradise Palms.
 2. Real-Time Menu Updates: Offer up-to-date information on what food items are available today, including daily specials and limited-time offerings.
