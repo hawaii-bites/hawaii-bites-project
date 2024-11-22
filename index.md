@@ -71,7 +71,11 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 >>>>>>> parent of 105d31f (Update index.md)
 ## User Guide
 - Navigate to "Foods Available Now" to see what’s being served.
+<<<<<<< HEAD
 - Use filters to search for specific cuisines or dietary preferences.
+=======
+- 
+>>>>>>> parent of 9cd6519 (update index)
 
 ## Developer Guide
 To run this project locally:
@@ -176,6 +180,11 @@ Seth Ines is pursuing a Bachelor of Science in Computer Science within the Depar
 =======
 >>>>>>> parent of 162e9a3 (Update index.md)
 ## Contact Us
+<<<<<<< HEAD
 - Email: **manoamunchiesuh@gmail.com**
 - GitHub: [Manoa Munchies Organization](https://github.com/manoa-munchies)
 >>>>>>> parent of e512910 (Update index.md)
+=======
+- Email: **hawaiibites@gmail.com**
+- GitHub: [Manoa Munchies Organization](https://github.com/manoa-munchies)
+>>>>>>> parent of 9cd6519 (update index)
