@@ -60,7 +60,11 @@ const CategoryPage = () => {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="min-h-screen flex flex-col bg-[#f0fdf4] text-black">
+=======
+    <div className="min-h-screen flex flex-col bg-[#005C39] text-black">
+>>>>>>> parent of 2942d8f (rename page.tsx to index.tsx)
       <Navbar />            {/* Render the Navbar component */}
       <div className="container mx-auto py-10">
         <h1 className="text-4xl font-bold capitalize text-center mb-8">{category.charAt(0).toUpperCase() + category.slice(1)} Options</h1>

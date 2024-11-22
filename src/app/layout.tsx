@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hawaii Bites",
+  title: "Manoa Munchies",
   description: "Discover the best food spots at the University of Hawaii.",
 };
 
