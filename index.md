@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Hawaii Bites
+title: Manoa Munchies
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <!-- Navigation Tabs -->
 <nav style="background-color: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
@@ -15,6 +16,9 @@ title: Hawaii Bites
 </nav>
 =======
 # Manoa Munchies
+=======
+Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
+>>>>>>> parent of 07b430d (Update index.md)
 
 Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
 >>>>>>> parent of 47696c1 (Update index.md)
@@ -34,6 +38,7 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 - [Contact Us](#contact-us)
 >>>>>>> parent of e512910 (Update index.md)
 
+<<<<<<< HEAD
 <!-- Page Content -->
 <section style="max-width: 800px; margin: 0 auto; font-size: 1em; line-height: 1.6;">
   <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Navigation</h2>
@@ -44,6 +49,10 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
     <li><a href="#developer-guide" style="text-decoration: none; color: #065f46; font-weight: bold;">Developer Guide</a></li>
     <li><a href="#contact-us" style="text-decoration: none; color: #065f46; font-weight: bold;">Contact Us</a></li>
   </ul>
+=======
+## Overview
+Manoa Munchies provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
+>>>>>>> parent of 07b430d (Update index.md)
 
 <<<<<<< HEAD
   <h2 id="overview" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Overview</h2>
