@@ -22,6 +22,7 @@ title: Manoa Munchies
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Screenshots of Progress</a></li>
 >>>>>>> parent of 9f5107d (Update index.md)
@@ -34,6 +35,11 @@ title: Manoa Munchies
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Progress</a></li>
     <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Meet the Team - Woof!</a></li>
 >>>>>>> parent of 3cd44ac (Update index.md)
+=======
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Progress</a></li>
+    <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Meet the Team - Woof!</a></li>
+>>>>>>> parent of 645bbae (Update index.md)
   </ul>
 </nav>
 =======
@@ -42,6 +48,7 @@ title: Manoa Munchies
 Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
 >>>>>>> parent of 07b430d (Update index.md)
 
+<<<<<<< HEAD
 Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
 >>>>>>> parent of 47696c1 (Update index.md)
 
@@ -63,6 +70,9 @@ title: Hawaii Bites
 
 =======
 >>>>>>> parent of b6f1830 (Update index.md)
+=======
+<!-- Page Content -->
+>>>>>>> parent of 645bbae (Update index.md)
 Welcome to Hawaii Bites! This app helps students find their favorite meals on campus.
 
 <<<<<<< HEAD
