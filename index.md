@@ -20,9 +20,14 @@ title: Manoa Munchies
 =======
 <nav style="background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
+<<<<<<< HEAD
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Screenshots of Progress</a></li>
 >>>>>>> parent of 9f5107d (Update index.md)
+=======
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #0000CD;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #0000CD;">Progress</a></li>
+>>>>>>> parent of ceb4f9d (Update index.md)
   </ul>
 </nav>
 =======
@@ -119,9 +124,14 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 - [Developer Guide](#developer-guide)
 - [Meet the Team](#meet-the-team)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Team Contract](#team-contract)
 >>>>>>> parent of f152bd2 (Update index.md)
+=======
+- [Team Contract](#team-contract)
+- [Project Management](#project-management)
+>>>>>>> parent of ceb4f9d (Update index.md)
 - [Contact Us](#contact-us)
 
  
@@ -342,6 +352,7 @@ To run this project locally:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Team Members
 # Kanoa Borromeo
 - Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
@@ -449,6 +460,8 @@ Seth Ines is pursuing a Bachelor of Science in Computer Science within the Depar
 =======
 =======
 >>>>>>> parent of 1600cc1 (Delete index.md)
+=======
+>>>>>>> parent of ceb4f9d (Update index.md)
 # Meet the Team
 
 <div style="display: flex; justify-content: space-between;">
@@ -473,6 +486,7 @@ Seth Ines is pursuing a Bachelor of Science in Computer Science within the Depar
 
 </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -518,6 +532,9 @@ If any disagreements arise regarding task assignment or project direction, we wi
 ## GitHub Hosting
 The project adheres to GitHub hosting guidelines, ensuring proper issue management, version control, and branch protection practices.
 
+=======
+## Project Management
+>>>>>>> parent of ceb4f9d (Update index.md)
 
 
 ## Contact Us
