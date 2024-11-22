@@ -19,12 +19,20 @@ title: Hawaii Bites
 Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
 >>>>>>> parent of 47696c1 (Update index.md)
 
+<<<<<<< HEAD
 <!-- Page Header -->
 <header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
   <img src="./public/pizza-dog.jpeg" alt="Pizza Dog" style="width: 50px; height: auto; margin-right: 10px;">
   <h1 style="color: #8B0000; font-size: 2.5em; font-family: 'Arial', sans-serif; margin: 0;">Hawaii Bites</h1>
 </header>
 <p style="text-align: center; font-size: 1.2em; color: #333; margin-bottom: 20px;">Helping students find their favorite meals on campus.</p>
+=======
+## Navigation
+- [Overview](#overview)
+- [User Guide](#user-guide)
+- [Developer Guide](#developer-guide)
+- [Contact Us](#contact-us)
+>>>>>>> parent of e512910 (Update index.md)
 
 <!-- Page Content -->
 <section style="max-width: 800px; margin: 0 auto; font-size: 1em; line-height: 1.6;">
@@ -52,6 +60,7 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
     <li>Community Engagement: Allow users to rate food items and provide feedback, creating a community-driven guide to the best eats on campus.</li>
   </ul>
 
+<<<<<<< HEAD
   <h2 id="user-guide" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">User Guide</h2>
   <ul style="margin-bottom: 30px;">
     <li>Navigate through the Welcome Page to see what’s being served.</li>
@@ -72,3 +81,8 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
     <li>GitHub: <a href="https://github.com/hawaii-bites/hawaii-bites.github.io" style="text-decoration: none; color: #065f46;">Hawaii Bites Organization</a></li>
   </ul>
 </section>
+=======
+## Contact Us
+- Email: **manoamunchiesuh@gmail.com**
+- GitHub: [Manoa Munchies Organization](https://github.com/manoa-munchies)
+>>>>>>> parent of e512910 (Update index.md)
