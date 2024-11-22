@@ -67,6 +67,7 @@ const fuzzyMatch = (input: string, target: string): boolean => {
 
 const MainContent: React.FC = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const [timeOfDay, setTimeOfDay] = useState<SpecialsKeys>("Breakfast"); // Default value
   const [search, setSearch] = useState<string>("");
   const router = useRouter();
@@ -111,6 +112,12 @@ const MainContent: React.FC = () => {
       <section className="text-center mb-16">
         <h1 className="text-5xl font-bold text-[#065f46] mb-6">Welcome to Hawaii Bites!</h1>
         <p className="text-xl text-gray-700 mb-10">
+=======
+    return (
+      <main className="flex-grow container mx-auto py-10">
+        <h2 className="text-3xl font-bold mb-4">Welcome to Manoa Munchies!</h2>
+        <p className="text-lg mb-6">
+>>>>>>> parent of 592df9b (changed title to Hawaii Bites)
           Discover your favorite campus meals and check out what’s available today.
         </p>
         <form onSubmit={handleSearch} className="flex justify-center gap-4 mb-10">

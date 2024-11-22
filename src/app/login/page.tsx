@@ -54,7 +54,11 @@ export default function LoginPage() {
 
       {/* Login Form */}
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+<<<<<<< HEAD
         <h2 className="text-2xl font-bold mb-6 text-center text-black">Login</h2>
+=======
+        <h2 className="text-2xl font-bold mb-6 text-center text-black">Manoa Munchies Login</h2>
+>>>>>>> parent of 592df9b (changed title to Hawaii Bites)
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium text-black">Username</label>

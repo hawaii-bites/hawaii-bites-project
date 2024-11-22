@@ -2,9 +2,12 @@ import React from 'react';
 <<<<<<< HEAD
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+<<<<<<< HEAD
 import Image from 'next/image'; // Import from 'next/image' if you're using Next.js
 =======
 >>>>>>> parent of 766b286 (Fix Navbar, update image paths, and add full-page styling)
+=======
+>>>>>>> parent of 592df9b (changed title to Hawaii Bites)
 
 const TodaysTopPicksPage: React.FC = () => {
   // Sample data for today's top picks
@@ -83,7 +86,7 @@ const TodaysTopPicksPage: React.FC = () => {
     <div>
       <Navbar />
       <div style={{ padding: '20px', maxWidth: '1200px', margin: 'auto' }}>
-        <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#000' }}>Today&apos;s Top Picks</h1>
+        <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#000' }}>Today's Top Picks</h1>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
           {topPicks.map((pick) => (
             <div
@@ -97,12 +100,10 @@ const TodaysTopPicksPage: React.FC = () => {
                 backgroundColor: '#f9f9f9',
               }}
             >
-              <Image
+              <img
                 src={pick.image}
                 alt={pick.name}
-                width={300}         // Define the width explicitly
-                height={200}        // Define the height explicitly
-                style={{ objectFit: 'cover', borderRadius: '10px' }}
+                style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '10px' }}
               />
               <h3 style={{ marginTop: '10px', color: '#000' }}>{pick.name}</h3>
               <p style={{ color: '#333', fontSize: '14px' }}>{pick.description}</p>
