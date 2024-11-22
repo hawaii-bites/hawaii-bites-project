@@ -55,6 +55,7 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
   </ul>
 =======
 ## Overview
+<<<<<<< HEAD
 Manoa Munchies provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 >>>>>>> parent of 07b430d (Update index.md)
 
@@ -64,6 +65,10 @@ Manoa Munchies provides a consolidated menu from all food vendors at the Univers
     Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
   </p>
 =======
+=======
+Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
+
+>>>>>>> parent of 105d31f (Update index.md)
 ## User Guide
 - Navigate to "Foods Available Now" to see what’s being served.
 - Use filters to search for specific cuisines or dietary preferences.
