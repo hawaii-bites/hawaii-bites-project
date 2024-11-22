@@ -8,7 +8,12 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">Hawaii Bites</h1>
         <nav className="space-x-4">
+<<<<<<< HEAD
           <Link href="/home" className="hover:underline">Home</Link>
+=======
+          <Link href="/" className="hover:underline">Home</Link>
+          <Link href="/menu" className="hover:underline">Menu</Link>
+>>>>>>> parent of 0fc4def (Update login with a bit of style)
           <Link href="/profile" className="hover:underline">Profile</Link>
 <<<<<<< HEAD
           <Link href="/todays-top-picks" className="hover:underline">Today&apos;s Top Picks</Link>
