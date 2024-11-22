@@ -9,6 +9,9 @@ title: Manoa Munchies
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 17cb5b1 (revert update 1)
 <!-- Navigation Tabs -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,6 +54,7 @@ title: Manoa Munchies
 >>>>>>> parent of 9bfbfa4 (Update index.md)
   </ul>
 </nav>
+<<<<<<< HEAD
 =======
 # Manoa Munchies
 =======
@@ -61,6 +65,8 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 <<<<<<< HEAD
 Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
 >>>>>>> parent of 47696c1 (Update index.md)
+=======
+>>>>>>> parent of 17cb5b1 (revert update 1)
 
 <<<<<<< HEAD
 <!-- Page Header -->
