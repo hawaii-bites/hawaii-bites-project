@@ -14,7 +14,11 @@ export default function LoginPage() {
     const validEmail = 'dkb25@hawaii.edu';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     const validPassword = 'SpaceCadet88';
+=======
+    const validPassword = 'MoonWalker769*';
+>>>>>>> parent of 1bd9f86 (Save local changes before pulling main)
     const validEmail2 = 'sethi3@hawaii.edu';
     const validPassword2 = 'Sword23';
 =======
