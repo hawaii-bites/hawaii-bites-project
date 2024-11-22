@@ -36,7 +36,11 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 - [User Guide](#user-guide)
 - [Developer Guide](#developer-guide)
 - [Contact Us](#contact-us)
+<<<<<<< HEAD
 >>>>>>> parent of e512910 (Update index.md)
+=======
+- - [Overview](#overview)
+>>>>>>> parent of 6baa6bf (Update index.md)
 
 <<<<<<< HEAD
 <!-- Page Content -->
