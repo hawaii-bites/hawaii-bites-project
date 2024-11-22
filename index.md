@@ -21,6 +21,7 @@ title: Hawaii Bites
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Screenshots of Progress</a></li>
 =======
@@ -32,6 +33,11 @@ title: Hawaii Bites
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Progress</a></li>
     <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Meet the Team - Woof!</a></li>
 >>>>>>> parent of 3cd44ac (Update index.md)
+=======
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Progress</a></li>
+    <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #8B0000;">Meet the Team - Woof!</a></li>
+>>>>>>> parent of 645bbae (Update index.md)
   </ul>
 </nav>
 
