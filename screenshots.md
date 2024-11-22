@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Progress
 
+=======
+>>>>>>> parent of 7610b00 (Update screenshots.md)
 ## Navigation
 - [Landing Page](#landing-page)
 - [Home Page](#home-page)
