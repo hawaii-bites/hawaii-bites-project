@@ -20,12 +20,18 @@ title: Hawaii Bites
 <nav style="background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Screenshots of Progress</a></li>
 =======
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #0000CD;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #0000CD;">Progress</a></li>
 >>>>>>> parent of ceb4f9d (Update index.md)
+=======
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Progress</a></li>
+    <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #ADD8E6;">Meet the Team - Woof!</a></li>
+>>>>>>> parent of 3cd44ac (Update index.md)
   </ul>
 </nav>
 
