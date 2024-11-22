@@ -9,21 +9,33 @@ const TodaysTopPicksPage: React.FC = () => {
       id: 1,
 <<<<<<< HEAD
       name: 'Matcha Latte',
+<<<<<<< HEAD
       image: '/matcha-latte.jpeg',
+=======
+      image: '/public/matcha-latte.jpg',
+>>>>>>> parent of 3711c25 (Save local changes before pulling main)
       description: 'A refreshing and creamy matcha latte made with high-quality matcha powder and milk. A popular choice from Starbucks.',
       location: 'Starbucks (Campus Center)',
     },
     {
       id: 2,
       name: 'Orange Chicken',
+<<<<<<< HEAD
       image: '/orange-chicken.jpeg',
+=======
+      image: '/public/orange-chicken.jpg',
+>>>>>>> parent of 3711c25 (Save local changes before pulling main)
       description: 'Crispy chicken bites tossed in a sweet and tangy orange sauce. A crowd favorite from Panda Express.',
       location: 'Panda Express (Paradise Palms)',
     },
     {
       id: 3,
       name: 'Lemongrass Banh Mi',
+<<<<<<< HEAD
       image: '/lemongrass-banhmi.jpeg',
+=======
+      image: '/public/lemongrass-banhmi.jpg',
+>>>>>>> parent of 3711c25 (Save local changes before pulling main)
       description: 'A Vietnamese-style baguette sandwich filled with lemongrass grilled chicken, pickled vegetables, and fresh herbs. A must-try from Ba-Le.',
       location: 'Ba-Le (Paradise Palms)',
 =======
