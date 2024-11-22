@@ -64,10 +64,11 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 
 <<<<<<< HEAD
 <!-- Page Header -->
-<header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
-  <img src="./public/pizza-dog.jpeg" alt="Pizza Dog" style="width: 50px; height: auto; margin-right: 10px;">
-  <h1 style="color: #8B0000; font-size: 2.5em; font-family: 'Arial', sans-serif; margin: 0;">Hawaii Bites</h1>
+<header style="text-align: center; margin-bottom: 40px;">
+  <h1 style="color: #8B0000; font-size: 2.5em; margin-bottom: 10px;">Hawaii Bites</h1>
+  <p style="font-size: 1.2em; color: #333;">Helping students find their favorite meals on campus.</p>
 </header>
+<<<<<<< HEAD
 <p style="text-align: center; font-size: 1.2em; color: #333; margin-bottom: 20px;">Helping students find their favorite meals on campus.</p>
 =======
 =======
@@ -79,6 +80,8 @@ title: Hawaii Bites
 ---
 =======
 >>>>>>> parent of 9bfbfa4 (Update index.md)
+=======
+>>>>>>> parent of 9d27cd7 (Update index.md)
 
 =======
 >>>>>>> parent of b6f1830 (Update index.md)
