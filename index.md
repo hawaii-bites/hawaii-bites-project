@@ -75,6 +75,7 @@ To run this project locally:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
 =======
 ![Kanoa Borromeo](./public/WeddingHeadShot.jpeg)
@@ -84,11 +85,15 @@ To run this project locally:
 =======
 ![Kanoa Borromeo](/DKBHeadShot.jpeg)
 >>>>>>> parent of 408a329 (Update index.md)
+=======
+![Kanoa Borromeo](./DKBHeadShot.jpeg)
+>>>>>>> parent of af8a863 (Update index.md)
 
 Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
 >>>>>>> parent of f4ecb8f (Update index.md)
 
 ## Seth Ines
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
@@ -98,6 +103,9 @@ Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at
 =======
 ![Seth Ines](/SethInesHeadShot.jpeg)
 >>>>>>> parent of 408a329 (Update index.md)
+=======
+![Seth Ines](./SethInesHeadShot.jpeg)
+>>>>>>> parent of af8a863 (Update index.md)
 
 Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
 
