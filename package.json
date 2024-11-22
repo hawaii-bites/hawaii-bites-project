@@ -10,15 +10,17 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@prisma/client": "^5.22.0",
     "bcrypt": "^5.1.1",
+=======
+>>>>>>> parent of ce84864 (Connecting prisma to user Vercel Superbase PostgreSQL)
     "next": "15.0.3",
     "react": "^19.0.0-rc-66855b96-20241106",
     "react-dom": "^19.0.0-rc-66855b96-20241106"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
-    "@types/node": "^20.17.6",
+    "@types/node": "^20",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "eslint": "^8",
@@ -35,8 +37,8 @@
     "@types/react-dom": "^18",
 >>>>>>> parent of 592df9b (changed title to Hawaii Bites)
     "postcss": "^8",
-    "prisma": "^5.22.0",
     "tailwindcss": "^3.4.1",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
@@ -52,6 +54,9 @@
 =======
     "eslint": "^8",
     "eslint-config-next": "15.0.3"
+=======
+    "typescript": "^5.6.3"
+>>>>>>> parent of ce84864 (Connecting prisma to user Vercel Superbase PostgreSQL)
   }
 >>>>>>> parent of 592df9b (changed title to Hawaii Bites)
 }
