@@ -3,6 +3,7 @@ layout: default
 title: Hawaii Bites
 ---
 
+<<<<<<< HEAD
 <!-- Navigation Tabs -->
 <nav style="background-color: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 30px;">
@@ -12,6 +13,11 @@ title: Hawaii Bites
     <li><a href="project-links.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Project Links</a></li>
   </ul>
 </nav>
+=======
+# Manoa Munchies
+
+Welcome to Manoa Munchies! This app helps students find their favorite meals on campus.
+>>>>>>> parent of 47696c1 (Update index.md)
 
 <!-- Page Header -->
 <header style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
