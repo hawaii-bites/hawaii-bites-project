@@ -133,11 +133,11 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 Manoa Munchies provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
 >>>>>>> parent of 07b430d (Update index.md)
 
-<<<<<<< HEAD
   <h2 id="overview" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Overview</h2>
   <p>
     Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
   </p>
+<<<<<<< HEAD
 =======
 =======
 Hawaii Bites provides a consolidated menu from all food vendors at the University of Hawaii, including food trucks, Campus Center, and Paradise Palms.
@@ -421,6 +421,18 @@ To run this project locally:
 =======
 ![Kanoa Borromeo](./DKBHeadShot.jpeg)
 >>>>>>> parent of af8a863 (Update index.md)
+=======
+
+  <h2 id="project-goals" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Project Goals</h2>
+  <ul style="margin-bottom: 30px;">
+    <li>Consolidate Campus Food Options: Provide a single platform that lists menu items from all University of Hawaii campus food locations, including Campus Center, food trucks, Manoa Gardens, and Paradise Palms.</li>
+    <li>Real-Time Menu Updates: Offer up-to-date information on what food items are available today, including daily specials and limited-time offerings.</li>
+    <li>Personalized Food Recommendations: Allow users to set preferences for specific cuisines (e.g., vegan, gluten-free, ethnic foods) and receive tailored suggestions based on their choices.</li>
+    <li>Vendor Collaboration: Enable vendors to update their menu options directly, ensuring accurate and current food availability data.</li>
+    <li>Enhanced User Experience: Help users quickly find the type of food they crave and discover popular dishes or trending items on campus.</li>
+    <li>Community Engagement: Allow users to rate food items and provide feedback, creating a community-driven guide to the best eats on campus.</li>
+  </ul>
+>>>>>>> parent of 049c36b (revert update 4)
 
 <<<<<<< HEAD
 Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
