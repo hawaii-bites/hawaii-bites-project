@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 'use client';
+=======
+"use client";
+>>>>>>> parent of 8ca7504 (use client update)
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
