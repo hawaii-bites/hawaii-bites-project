@@ -10,12 +10,19 @@ title: Manoa Munchies
 <<<<<<< HEAD
 <<<<<<< HEAD
 <!-- Navigation Tabs -->
+<<<<<<< HEAD
 <nav style="background-color: #f8f9fa; padding: 15px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
   <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 30px;">
     <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Home</a></li>
     <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Progress</a></li>
     <li><a href="meet-the-team.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Meet the Team - Woof!</a></li>
     <li><a href="project-links.html" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 1.1em;">Project Links</a></li>
+=======
+<nav style="background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd;">
+  <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; gap: 20px;">
+    <li><a href="index.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Home</a></li>
+    <li><a href="screenshots.html" style="text-decoration: none; font-weight: bold; color: #065f46;">Screenshots of Progress</a></li>
+>>>>>>> parent of 9f5107d (Update index.md)
   </ul>
 </nav>
 =======
