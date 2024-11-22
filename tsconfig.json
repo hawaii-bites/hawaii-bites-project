@@ -23,9 +23,13 @@
     }
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/food-available-now", "next.config.mjs"],
 =======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
 >>>>>>> parent of 4c66bdb (update foods available to appear in nav and show webpage)
+=======
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/food-available-now"],
+>>>>>>> parent of a127a7d (transform to a java)
   "exclude": ["node_modules"]
 }
