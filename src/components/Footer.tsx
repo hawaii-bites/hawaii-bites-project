@@ -1,5 +1,3 @@
-'use client';
-
 const Footer: React.FC = () => {
     return (
       <footer className="bg-[#004A32] text-white py-4 text-center">
