@@ -73,16 +73,28 @@ To run this project locally:
 # Meet the Team
 ## Kanoa Borromeo
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
 =======
 ![Kanoa Borromeo](./public/WeddingHeadShot.jpeg)
+=======
+![Kanoa Borromeo](./public/DKBHeadShot.jpeg)
+>>>>>>> parent of 162e9a3 (Update index.md)
 
 Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at UH Manoa. Stepping away from D1 soccer in California allowed Kanoa to immerse himself in AI-related opportunities. Kanoa aspires to combine his CS and future JD degrees to help regulate AI policies.
 >>>>>>> parent of f4ecb8f (Update index.md)
 
 ## Seth Ines
+<<<<<<< HEAD
 - Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
 >>>>>>> parent of aff6640 (Update index.md)
+=======
+![Seth Ines](./public/SethInesHeadShot.jpeg)
+
+Seth Ines is pursuing a Bachelor of Science in Computer Science within the Department of Information and Computer Sciences at the University of Hawaii. His career goal is to become a data analysis engineer, applying analytical and technical expertise to solve complex data challenges.
+
+
+>>>>>>> parent of 162e9a3 (Update index.md)
 
   <h2 id="project-goals" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Project Goals</h2>
   <ul style="margin-bottom: 30px;">
@@ -102,6 +114,7 @@ Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at
     <li>Get updates on Specials and Top Picks.</li>
   </ul>
 
+<<<<<<< HEAD
   <h2 id="developer-guide" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">Developer Guide</h2>
   <ol style="margin-bottom: 30px;">
     <li>Clone the repository.</li>
@@ -116,6 +129,8 @@ Dominic “Kanoa” Borromeo is a rising senior, majoring in Computer Science at
   </ul>
 </section>
 =======
+=======
+>>>>>>> parent of 162e9a3 (Update index.md)
 ## Contact Us
 - Email: **manoamunchiesuh@gmail.com**
 - GitHub: [Manoa Munchies Organization](https://github.com/manoa-munchies)
