@@ -12,12 +12,16 @@ export default function LoginPage() {
     e.preventDefault();
 
     const validEmail = 'dkb25@hawaii.edu';
+<<<<<<< HEAD
     const validPassword = 'SpaceCadet88';
     const validEmail2 = 'sethi3@hawaii.edu';
     const validPassword2 = 'Sword23';
+=======
+    const validPassword = 'MoonWalker769*';
+>>>>>>> parent of 7381629 (Seth valid user and password)
 
     // Validate email and password
-    if ((email === validEmail && password === validPassword) || (email === validEmail2 && password === validPassword2)) {
+    if (email === validEmail && password === validPassword) {
       alert('Login successful!');
       router.push('/home');
     } else {
