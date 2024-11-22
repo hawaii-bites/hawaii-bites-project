@@ -113,6 +113,7 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
     <li><a href="#project-goals" style="text-decoration: none; color: #065f46; font-weight: bold;">Project Goals</a></li>
     <li><a href="#user-guide" style="text-decoration: none; color: #065f46; font-weight: bold;">User Guide</a></li>
     <li><a href="#developer-guide" style="text-decoration: none; color: #065f46; font-weight: bold;">Developer Guide</a></li>
+    <li><a href="#project-management" style="text-decoration: none; color: #065f46; font-weight: bold;">Project Management</a></li>
     <li><a href="#contact-us" style="text-decoration: none; color: #065f46; font-weight: bold;">Contact Us</a></li>
   </ul>
 =======
