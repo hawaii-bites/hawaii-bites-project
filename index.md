@@ -68,7 +68,6 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 =======
 >>>>>>> parent of 17cb5b1 (revert update 1)
 
-<<<<<<< HEAD
 <!-- Page Header -->
 <header style="text-align: center; margin-bottom: 40px;">
   <h1 style="color: #8B0000; font-size: 2.5em; margin-bottom: 10px;">Hawaii Bites</h1>
@@ -76,6 +75,7 @@ Welcome to Manoa Munchies! This app helps students find their favorite meals on 
 </header>
 <<<<<<< HEAD
 <p style="text-align: center; font-size: 1.2em; color: #333; margin-bottom: 20px;">Helping students find their favorite meals on campus.</p>
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -110,6 +110,8 @@ Welcome to Hawaii Bites! This app helps students find their favorite meals on ca
 =======
 - - [Overview](#overview)
 >>>>>>> parent of 6baa6bf (Update index.md)
+=======
+>>>>>>> parent of 1f504f1 (revert update 3)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -339,6 +341,7 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 =======
 >>>>>>> parent of 1600cc1 (Delete index.md)
 
+<<<<<<< HEAD
 
 <!-- Vendor Dashboard Page -->
 <div style="max-width: 600px; text-align: center; margin-bottom: 40px;">
@@ -468,6 +471,8 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 1f504f1 (revert update 3)
   <h2 id="user-guide" style="border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #8B0000;">User Guide</h2>
   <ul style="margin-bottom: 30px;">
     <li>Navigate through the Welcome Page to see what’s being served.</li>
@@ -489,6 +494,7 @@ Hawaii Bites provides a consolidated menu from all food vendors at the Universit
     <li>GitHub: <a href="https://github.com/hawaii-bites/hawaii-bites.github.io" style="text-decoration: none; color: #065f46;">Hawaii Bites Organization</a></li>
   </ul>
 </section>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 162e9a3 (Update index.md)
@@ -625,3 +631,5 @@ To run this project locally:
 - Email: **hawaiibites@gmail.com**
 - GitHub: [Hawaii Bites Organization](https://github.com/hawaii-bites/hawaii-bites.github.io)
 >>>>>>> parent of 9bfbfa4 (Update index.md)
+=======
+>>>>>>> parent of 1f504f1 (revert update 3)
