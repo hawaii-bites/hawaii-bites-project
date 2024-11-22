@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 'use client';
 =======
 "use client";
 >>>>>>> parent of 8ca7504 (use client update)
 
+=======
+>>>>>>> parent of 07dc528 (update page use client)
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
