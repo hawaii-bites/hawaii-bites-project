@@ -10,7 +10,11 @@ test.describe('LoginPage', () => {
   test('renders login form with all elements', async ({ page }) => {
     await page.goto('https://hawaii-bites.vercel.app/login'); // Adjust URL to match your app
 
-    // Check if the username and password fields exist
+    // Check if the description box exists
+    await expect(page.locator('div.bg-blue-100')).toBeVisible();
+    await expect(page.locator('h2:has-text("About Hawaii Bites")')).toBeVisible();
+
+    // Check if the login form fields exist
     await expect(page.locator('input#email')).toBeVisible();
     await expect(page.locator('input#password')).toBeVisible();
 
@@ -27,8 +31,9 @@ test.describe('LoginPage', () => {
       await page.fill('input#password', password);
 
       // Mock browser's alert behavior
-      page.on('dialog', async (dialog) => {
+      page.once('dialog', async (dialog) => {
         expect(dialog.message()).toBe('Login successful!');
+        await dialog.accept();
       });
 
       // Submit the form
@@ -50,9 +55,9 @@ test.describe('LoginPage', () => {
     await page.fill('input#password', invalidCredentials.password);
 
     // Mock browser's alert behavior
-    page.on('dialog', async (dialog) => {
+    page.once('dialog', async (dialog) => {
       expect(dialog.message()).toBe('Invalid UH email or password.');
-      await dialog.dismiss();
+      await dialog.accept();
     });
 
     // Submit the form
