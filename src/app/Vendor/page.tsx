@@ -1,74 +1,158 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import React from 'react';
+"use client";
 
-const VendorHomePage = () => {
+import { useState, useEffect } from "react";
+import supabase from "../services/supabaseClient"; // Ensure this matches the location of supabaseClient.js
+
+interface Vendor {
+  id: string;
+  name: string;
+  location: string;
+}
+
+const ManageMenuItems = () => {
+  const [vendors, setVendors] = useState<Vendor[]>([]);
+  const [menuItems, setMenuItems] = useState([]);
+  const [newItem, setNewItem] = useState({
+    vendor_id: "",
+    item_name: "",
+    category: "",
+    description: "",
+  });
+
+  // Fetch vendors dynamically from Supabase
+  useEffect(() => {
+    const fetchVendors = async () => {
+      try {
+        const { data, error } = await supabase.from("FoodVendors").select("*");
+        if (error) {
+          console.error("Error fetching vendors:", error.message);
+          alert("Failed to load vendors.");
+        } else {
+          setVendors(data || []);
+        }
+      } catch (err) {
+        console.error("Unexpected error:", err);
+        alert("An unexpected error occurred.");
+      }
+    };
+    fetchVendors();
+  }, []);
+
+  // Handle adding a new menu item
+  const handleAddItem = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newItem.vendor_id) {
+      alert("Please select a vendor.");
+      return;
+    }
+
+    try {
+      const { data, error } = await supabase.from("MenuItems").insert([newItem]);
+      if (error) {
+        console.error("Error adding item:", error.message);
+        alert("Failed to add the item. Please try again.");
+        return;
+      }
+      alert("Item added successfully!");
+      setMenuItems((prev) => [...prev, ...(data || [])]);
+      setNewItem({ vendor_id: "", item_name: "", category: "", description: "" });
+    } catch (err) {
+      console.error("Unexpected error:", err);
+      alert("An unexpected error occurred. Please try again.");
+    }
+  };
+
+  // Render loading or error message if vendors failed to load
+  if (vendors.length === 0) {
+    return (
+      <div className="container mx-auto py-10 text-center">
+        <h1 className="text-red-600">Failed to load vendors. Please try again later.</h1>
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <Navbar />
-    <div className="vendor-home-page" style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#333' }}>Vendor Dashboard</h1>
-      <p style={{ fontSize: '1.1rem', color: '#666' }}>
-        Welcome to the Hawaii Bites Vendor Dashboard. Here, you can manage your daily and weekly menu items, as well as update your vendor profile.
-      </p>
+    <div className="container mx-auto py-10 px-6 bg-gray-50 min-h-screen">
+      <h1 className="text-4xl font-bold text-gray-800 mb-8">Manage Menu Items</h1>
 
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.5rem', color: '#333' }}>Today&apos;s Menu</h2>
-        <p style={{ fontSize: '1rem', color: '#666' }}>
-          Keep your customers informed by updating your menu for today. Be sure to highlight any specials or limited-time offerings.
-        </p>
-        <button style={{
-          padding: '10px 20px',
-          fontSize: '1rem',
-          color: '#fff',
-          backgroundColor: '#007bff',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}>
-          Update Today’s Menu
-        </button>
-      </section>
+      {/* Add New Menu Item Section */}
+      <section>
+        <h2 className="text-2xl font-semibold text-blue-700 mb-4">Add New Menu Item</h2>
+        <form onSubmit={handleAddItem} className="bg-white shadow-md rounded-lg p-6 border border-gray-200">
+          {/* Vendor Selection */}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Vendor</label>
+            <select
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+              value={newItem.vendor_id}
+              onChange={(e) => setNewItem({ ...newItem, vendor_id: e.target.value })}
+              required
+            >
+              <option value="">Select a Vendor</option>
+              {vendors.map((vendor) => (
+                <option key={vendor.id} value={vendor.id}>
+                  {vendor.name} - {vendor.location}
+                </option>
+              ))}
+            </select>
+          </div>
 
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.5rem', color: '#333' }}>Weekly Menu</h2>
-        <p style={{ fontSize: '1rem', color: '#666' }}>
-          Plan ahead by setting your weekly menu. This helps users know what items are available throughout the week.
-        </p>
-        <button style={{
-          padding: '10px 20px',
-          fontSize: '1rem',
-          color: '#fff',
-          backgroundColor: '#28a745',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}>
-          Update Weekly Menu
-        </button>
-      </section>
+          {/* Item Name */}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Name</label>
+            <input
+              type="text"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+              value={newItem.item_name}
+              onChange={(e) => setNewItem({ ...newItem, item_name: e.target.value })}
+              placeholder="Enter item name"
+              required
+            />
+          </div>
 
-      <section style={{ marginTop: '30px' }}>
-        <h2 style={{ fontSize: '1.5rem', color: '#333' }}>Vendor Profile</h2>
-        <p style={{ fontSize: '1rem', color: '#666' }}>
-          Keep your information up-to-date, including contact details and location, to ensure accurate customer interaction.
-        </p>
-        <button style={{
-          padding: '10px 20px',
-          fontSize: '1rem',
-          color: '#fff',
-          backgroundColor: '#ffc107',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}>
-          Edit Profile
-        </button>
+          {/* Category */}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Category</label>
+            <select
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+              value={newItem.category}
+              onChange={(e) => setNewItem({ ...newItem, category: e.target.value })}
+              required
+            >
+              <option value="">Select a Category</option>
+              <option value="entree">Entree</option>
+              <option value="drinks">Drinks</option>
+              <option value="snacks & sides">Snacks & Sides</option>
+              <option value="sticks & rolls">Sticks & Rolls</option>
+              <option value="rice & noodles">Rice & Noodles</option>
+            </select>
+          </div>
+
+          {/* Description */}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Description</label>
+            <textarea
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500"
+              value={newItem.description}
+              onChange={(e) => setNewItem({ ...newItem, description: e.target.value })}
+              placeholder="Enter item description"
+              required
+            />
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700 shadow-md"
+          >
+            Add Item
+          </button>
+        </form>
       </section>
-    </div>
-    <Footer />
     </div>
   );
 };
 
-export default VendorHomePage;
+export default ManageMenuItems;
