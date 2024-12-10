@@ -3,7 +3,8 @@ import Navbar from '@/components/Navbar';
 "use client";
 
 import { useState, useEffect } from "react";
-import supabase from "../services/supabaseClient"; // Ensure this matches the location of supabaseClient.js
+import supabase from "../services/supabaseClient";
+ // Ensure this matches the location of supabaseClient.js
 
 interface Vendor {
   id: string;
