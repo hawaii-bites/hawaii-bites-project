@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import supabase from "../services/supabaseClient"; // Adjust this path to match your project structure
+import supabase from "@/services/supabaseClient"; // Adjust this path to match your project structure
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");

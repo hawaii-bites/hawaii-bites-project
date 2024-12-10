@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import React, { useState } from 'react';
-import supabase from '../services/supabaseClient'; // Adjust the path to your Supabase client
+import supabase from '@/services/supabaseClient'; // Adjust the path to your Supabase client
 
 const AdminHomePage = () => {
   const [vendorName, setVendorName] = useState('');
