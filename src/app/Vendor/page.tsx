@@ -1,9 +1,11 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
 "use client";
 
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+
+
 import { useState, useEffect } from "react";
-import supabase from "../services/supabaseClient";
+import supabase from "@/services/supabaseClient";
  // Ensure this matches the location of supabaseClient.js
 
 interface Vendor {
@@ -75,6 +77,8 @@ const ManageMenuItems = () => {
   }
 
   return (
+    <div>
+      <Navbar />
     <div className="container mx-auto py-10 px-6 bg-gray-50 min-h-screen">
       <h1 className="text-4xl font-bold text-gray-800 mb-8">Manage Menu Items</h1>
 
@@ -152,6 +156,8 @@ const ManageMenuItems = () => {
           </button>
         </form>
       </section>
+    </div>
+    <Footer />
     </div>
   );
 };
