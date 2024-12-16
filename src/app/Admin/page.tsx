@@ -20,7 +20,7 @@ const AdminHomePage = () => {
     }
 
     try {
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('FoodVendors')
         .insert([{ name: vendorName, location: vendorLocation }]);
 
