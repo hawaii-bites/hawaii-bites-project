@@ -28,6 +28,31 @@ test.describe('AdminHomePage Tests', () => {
     );
   });
 
+  test('should display and interact with Add New Vendor form', async ({ page }) => {
+    // Verify the Add New Vendor section
+    const addVendorTitle = await page.locator('text=Add New Vendor');
+    await expect(addVendorTitle).toBeVisible();
+
+    // Fill out the form
+    const vendorNameInput = page.locator('#vendorName');
+    const vendorLocationInput = page.locator('#vendorLocation');
+    const submitButton = page.locator('button:has-text("Add Vendor")');
+
+    // Check form validation
+    await submitButton.click();
+    const errorMessage = page.locator('text=Please fill in all fields.');
+    await expect(errorMessage).toBeVisible();
+
+    // Enter valid data
+    await vendorNameInput.fill('Test Vendor');
+    await vendorLocationInput.fill('Test Location');
+    await submitButton.click();
+
+    // Verify success message
+    const successMessage = page.locator('text=Vendor added successfully!');
+    await expect(successMessage).toBeVisible();
+  });
+
   test('should display and interact with Manage Users section', async ({ page }) => {
     // Check the section title
     const manageUsersTitle = await page.locator('text=Manage Users');
@@ -38,8 +63,7 @@ test.describe('AdminHomePage Tests', () => {
     await expect(manageUsersButton).toBeVisible();
     await manageUsersButton.click();
 
-    // Verify that the button action navigates or triggers the appropriate functionality
-    // For example, check URL change or modal visibility
+    // Verify navigation or action
     // Example: await expect(page).toHaveURL('/users'); (Adjust as necessary)
   });
 
@@ -53,7 +77,7 @@ test.describe('AdminHomePage Tests', () => {
     await expect(manageVendorsButton).toBeVisible();
     await manageVendorsButton.click();
 
-    // Verify that the button action navigates or triggers the appropriate functionality
+    // Verify navigation or action
   });
 
   test('should display and interact with Menu Directory section', async ({ page }) => {
@@ -66,6 +90,6 @@ test.describe('AdminHomePage Tests', () => {
     await expect(menuDirectoryButton).toBeVisible();
     await menuDirectoryButton.click();
 
-    // Verify that the button action navigates or triggers the appropriate functionality
+    // Verify navigation or action
   });
 });

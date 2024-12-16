@@ -1,81 +1,95 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('VendorHomePage Tests', () => {
+test.describe('ManageMenuItems Page Tests', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('https://hawaii-bites.vercel.app/Vendor'); // Replace with the correct route for your app
+    // Navigate to the Manage Menu Items page
+    await page.goto('https://hawaii-bites.vercel.app/ManageMenu'); // Replace with the correct route
   });
 
   test('should display the page title and description', async ({ page }) => {
     // Verify the title
-    const pageTitle = await page.locator('h1:text("Vendor Dashboard")');
-    await expect(pageTitle).toHaveText('Vendor Dashboard');
-    
-
-    // Verify the description
-    const description = await page.locator('p').first();
-    await expect(description).toHaveText(
-      'Welcome to the Hawaii Bites Vendor Dashboard. Here, you can manage your daily and weekly menu items, as well as update your vendor profile.'
-    );
+    const pageTitle = await page.locator('h1:text("Manage Menu Items")');
+    await expect(pageTitle).toHaveText('Manage Menu Items');
   });
 
-  test('should display all sections with correct headings and descriptions', async ({ page }) => {
-    const sections = [
-      {
-        heading: 'Today\'s Menu',
-        description: 'Keep your customers informed by updating your menu for today. Be sure to highlight any specials or limited-time offerings.',
-        buttonText: 'Update Today’s Menu',
-      },
-      {
-        heading: 'Weekly Menu',
-        description: 'Plan ahead by setting your weekly menu. This helps users know what items are available throughout the week.',
-        buttonText: 'Update Weekly Menu',
-      },
-      {
-        heading: 'Vendor Profile',
-        description: 'Keep your information up-to-date, including contact details and location, to ensure accurate customer interaction.',
-        buttonText: 'Edit Profile',
-      },
-    ];
+  test('should display the Add New Menu Item form with all fields', async ({ page }) => {
+    // Check form heading
+    const formHeading = await page.locator('h2:text("Add New Menu Item")');
+    await expect(formHeading).toHaveText('Add New Menu Item');
 
-    for (const [index, section] of sections.entries()) {
-      const sectionHeading = await page.locator(`section >> nth=${index} >> h2`);
-      const sectionDescription = await page.locator(`section >> nth=${index} >> p`);
-      const sectionButton = await page.locator(`section >> nth=${index} >> button`);
+    // Check if all form fields are visible
+    const vendorSelect = await page.locator('select');
+    const itemNameInput = await page.locator('input[placeholder="Enter item name"]');
+    const categorySelect = await page.locator('select:has-text("Select a Category")');
+    const descriptionTextarea = await page.locator('textarea[placeholder="Enter item description"]');
+    const submitButton = await page.locator('button:text("Add Item")');
 
-      await expect(sectionHeading).toHaveText(section.heading);
-      await expect(sectionDescription).toHaveText(section.description);
-      await expect(sectionButton).toHaveText(section.buttonText);
-    }
+    await expect(vendorSelect).toBeVisible();
+    await expect(itemNameInput).toBeVisible();
+    await expect(categorySelect).toBeVisible();
+    await expect(descriptionTextarea).toBeVisible();
+    await expect(submitButton).toBeVisible();
   });
 
-  test('should perform button interactions correctly', async ({ page }) => {
-    // Mock clicking the "Update Today’s Menu" button
-    const todayMenuButton = await page.locator('button:has-text("Update Today’s Menu")');
-    await expect(todayMenuButton).toBeVisible();
-    await todayMenuButton.click();
+  test('should validate form and show alert for missing vendor', async ({ page }) => {
+    // Try submitting the form without selecting a vendor
+    const submitButton = await page.locator('button:text("Add Item")');
+    await submitButton.click();
 
-    // Mock clicking the "Update Weekly Menu" button
-    const weeklyMenuButton = await page.locator('button:has-text("Update Weekly Menu")');
-    await expect(weeklyMenuButton).toBeVisible();
-    await weeklyMenuButton.click();
-
-    // Mock clicking the "Edit Profile" button
-    const editProfileButton = await page.locator('button:has-text("Edit Profile")');
-    await expect(editProfileButton).toBeVisible();
-    await editProfileButton.click();
+    // Expect an alert for missing vendor
+    await page.on('dialog', (dialog) => {
+      expect(dialog.message()).toBe('Please select a vendor.');
+      dialog.dismiss();
+    });
   });
 
-  test('should display correct styles for buttons', async ({ page }) => {
-    const buttons = [
-      { text: 'Update Today’s Menu', backgroundColor: 'rgb(0, 123, 255)' },
-      { text: 'Update Weekly Menu', backgroundColor: 'rgb(40, 167, 69)' },
-      { text: 'Edit Profile', backgroundColor: 'rgb(255, 193, 7)' },
-    ];
+  test('should successfully add a menu item', async ({ page }) => {
+    // Fill out the form
+    const vendorSelect = await page.locator('select');
+    const itemNameInput = await page.locator('input[placeholder="Enter item name"]');
+    const categorySelect = await page.locator('select:has-text("Select a Category")');
+    const descriptionTextarea = await page.locator('textarea[placeholder="Enter item description"]');
+    const submitButton = await page.locator('button:text("Add Item")');
 
-    for (const button of buttons) {
-      const buttonLocator = await page.locator(`button:has-text("${button.text}")`);
-      const backgroundColor = await buttonLocator.evaluate((el) => getComputedStyle(el).backgroundColor);
-      expect(backgroundColor).toBe(button.backgroundColor);
-    }
+    await vendorSelect.selectOption({ label: 'Test Vendor - Test Location' }); // Replace with an actual vendor option
+    await itemNameInput.fill('Test Item');
+    await categorySelect.selectOption('entree');
+    await descriptionTextarea.fill('A delicious test item.');
+
+    // Mock the API response or use a real test environment
+    page.on('dialog', (dialog) => {
+      expect(dialog.message()).toBe('Item added successfully!');
+      dialog.dismiss();
+    });
+
+    // Submit the form
+    await submitButton.click();
+
+    // Verify the item is added (this may require an actual API test or mocking response)
+    const newItem = await page.locator('text=Test Item');
+    await expect(newItem).toBeVisible();
+  });
+
+  test('should display the loading/error state when vendors fail to load', async ({ page }) => {
+    // Mock vendor fetch failure (if possible)
+    // For this test, simulate a scenario where vendors aren't loaded
+    const errorMessage = await page.locator('h1.text-red-600');
+    await expect(errorMessage).toHaveText('Failed to load vendors. Please try again later.');
+  });
+
+  test('should interact with category dropdown options', async ({ page }) => {
+    // Check if category options are correct
+    const categorySelect = await page.locator('select:has-text("Select a Category")');
+    await expect(categorySelect).toBeVisible();
+
+    const options = await categorySelect.locator('option').allInnerTexts();
+    expect(options).toEqual([
+      'Select a Category',
+      'Entree',
+      'Drinks',
+      'Snacks & Sides',
+      'Sticks & Rolls',
+      'Rice & Noodles',
+    ]);
   });
 });

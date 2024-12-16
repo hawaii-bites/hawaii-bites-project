@@ -1,27 +1,49 @@
-"use client";  // This tells Next.js this is a client component
+"use client"; // This tells Next.js this is a client component
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import supabase from "@/services/supabaseClient"; // Adjust this path to match your project structure
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const router = useRouter();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const validEmail = 'dkb25@hawaii.edu';
-    const validPassword = 'SpaceCadet88';
-    const validEmail2 = 'sethi3@hawaii.edu';
-    const validPassword2 = 'Sword23';
+    // Check for hardcoded credentials
+    if (email === "test@hawaii.edu" && password === "TestPassword123") {
+      alert("Login successful with test credentials!");
+      router.push("/home"); // Redirect to the home page
+      return;
+    }
 
-    // Validate email and password
-    if ((email === validEmail && password === validPassword) || (email === validEmail2 && password === validPassword2)) {
-      alert('Login successful!');
-      router.push('/home');
-    } else {
-      alert('Invalid UH email or password.');
+    try {
+      // Query the "Users" table for matching email and password
+      const { data, error } = await supabase
+        .from("Users")
+        .select("email, password")
+        .eq("email", email)
+        .eq("password", password);
+
+      if (error) {
+        console.error("Error fetching user data:", error.message);
+        alert("An error occurred while validating the credentials.");
+        return;
+      }
+
+      if (data && data.length > 0) {
+        // Login successful
+        alert("Login successful!");
+        router.push("/home"); // Redirect to the home page
+      } else {
+        // Login failed
+        alert("Invalid email or password.");
+      }
+    } catch (err) {
+      console.error("Unexpected error:", err);
+      alert("An unexpected error occurred. Please try again.");
     }
   };
 
@@ -29,12 +51,15 @@ export default function LoginPage() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-green-100">
       {/* Description Box */}
       <div className="bg-blue-100 p-6 rounded-lg shadow-md w-full max-w-lg mb-6">
-        <h2 className="text-xl font-bold mb-4 text-center text-black">About Hawaii Bites</h2>
+        <h2 className="text-xl font-bold mb-4 text-center text-black">
+          About Hawaii Bites
+        </h2>
         <p className="text-black text-sm leading-relaxed">
-          Hawaii Bites provides a secure and intuitive login portal for University of Hawaii students. 
-          Access personalized services regarding places to dine on campus. 
-          For Students and Users input your Email in the Username field and Password.
-          For Vendors input the Name of Company in the Username field and Password.
+          Hawaii Bites provides a secure and intuitive login portal for
+          University of Hawaii students. Access personalized services regarding
+          places to dine on campus. For Students and Users input your Email in
+          the Username field and Password. For Vendors input the Name of
+          Company in the Username field and Password.
         </p>
       </div>
 
@@ -43,7 +68,12 @@ export default function LoginPage() {
         <h2 className="text-2xl font-bold mb-6 text-center text-black">Login</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-black">Username</label>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-black"
+            >
+              Username
+            </label>
             <input
               type="email"
               id="email"
@@ -55,7 +85,12 @@ export default function LoginPage() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="password" className="block text-sm font-medium text-black">Password</label>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-black"
+            >
+              Password
+            </label>
             <input
               type="password"
               id="password"
@@ -69,7 +104,9 @@ export default function LoginPage() {
           <button
             type="submit"
             className="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700"
-          >Login</button>
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>
