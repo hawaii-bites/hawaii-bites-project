@@ -16,7 +16,7 @@ interface Vendor {
 
 const ManageMenuItems = () => {
   const [vendors, setVendors] = useState<Vendor[]>([]);
-  const [menuItems, setMenuItems] = useState([]);
+  const [ menuItem, setMenuItems] = useState([]);
   const [newItem, setNewItem] = useState({
     vendor_id: "",
     item_name: "",

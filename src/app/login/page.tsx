@@ -12,6 +12,13 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Check for hardcoded credentials
+    if (email === "test@hawaii.edu" && password === "TestPassword123") {
+      alert("Login successful with test credentials!");
+      router.push("/home"); // Redirect to the home page
+      return;
+    }
+
     try {
       // Query the "Users" table for matching email and password
       const { data, error } = await supabase
@@ -97,7 +104,9 @@ export default function LoginPage() {
           <button
             type="submit"
             className="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700"
-          >Login</button>
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>
